@@ -1,0 +1,67 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<title>Login page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body
+{
+	background-image: url(image/bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+            body {
+                background-size: auto; /*it will Adjust the background size for smaller screens */
+            }
+}
+</style>
+</head>
+<body>
+<div class="img-fluid">
+<div style="margin-top:8rem">
+<form action="login.php" method="POST" id="form" defer>
+<div class="container">
+<b><h3 align="center">LOGIN</h3><b>
+<div class="row">
+<div class="col-sm-0 col-md-4 col-lg-3"></div>
+<div class="col-sm-12 col-md-4 col-lg-6">
+<div class="card">
+<div class="card-body">
+   <label for="email" class="mt-2 form-label text-secondary" >E-mail:</label>
+  <div class="input-group">
+	<input type="email" id="email" name="email"  class="form-control" placeholder="Please Provide Your email.." required autocomplete="off"><span class="input-group-text"><i class="far fa-envelope"></i></span>
+  </div>
+<span id="eerror"></span><br>
+	<label for="password" class="mt-2 form-label text-secondary" >Password:</label>
+  <div class="input-group">
+<input type="password" id="password" name="password"  class="form-control" placeholder="Please Provide Your password.." required autocomplete="off"><span class="input-group-text"><i class="far fa-eye-slash"></i></span>
+  </div>
+<span id="perror"></span><br>
+<div class="row">
+<div class="col-4">
+<button type="submit" class="btn btn-block btn-warning text-dark" >Login</button>
+</div>
+<div class="col-4"></div>
+<div class="col-4">
+<button type="reset" class="btn btn-block btn-danger text-dark">Reset</button>
+</div> <br><br>
+</div>
+<a href="register.html">Dont have an account? Register</a>
+</div>
+</div>
+<div class="col-sm-0 col-md-4 col-lg-3"></div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+
